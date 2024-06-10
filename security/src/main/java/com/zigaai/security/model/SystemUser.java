@@ -11,15 +11,11 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.SpringSecurityCoreVersion;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.util.CollectionUtils;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 @Getter
@@ -55,7 +51,7 @@ public class SystemUser implements UserDetails, Serializable {
     /**
      * 状态: 0: 正常, 1: 删除
      */
-    private final Boolean deleted;
+    private final Boolean isDeleted;
 
     /**
      * 用户类型
@@ -168,6 +164,6 @@ public class SystemUser implements UserDetails, Serializable {
 
     @Override
     public boolean isEnabled() {
-        return this.deleted != null && !this.deleted;
+        return this.isDeleted != null && !this.isDeleted;
     }
 }
