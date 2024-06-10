@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.zigaai</groupId>
         <artifactId>chok-base</artifactId>
-        <version>0.0.1</version>
+        <version>3.3.0</version>
     </parent>
 
     <artifactId>oauth2</artifactId>

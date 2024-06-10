@@ -12,7 +12,7 @@
 		<module>oauth2</module>
 	</modules>
 	<packaging>pom</packaging>
-	<version>0.0.1</version>
+	<version>3.3.0</version>
 	<description>Chok Base</description>
 
 	<properties>
@@ -20,7 +20,7 @@
 		<maven.compiler.target>21</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<spring-boot.version>3.3.0</spring-boot.version>
+		<spring-boot.version>${version}</spring-boot.version>
 		<protobuf.version>3.23.4</protobuf.version>
 		<protobuf-plugin.version>0.6.1</protobuf-plugin.version>
 		<grpc.version>1.58.0</grpc.version>
