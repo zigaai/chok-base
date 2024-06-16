@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>oauth2</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>${java.version}</maven.compiler.source>
