@@ -10,7 +10,7 @@ public interface AuthenticationModel {
 
     String getSalt();
 
-    Byte getIsDeleted();
+    Byte getDeleted();
 
     String getUserType();
 

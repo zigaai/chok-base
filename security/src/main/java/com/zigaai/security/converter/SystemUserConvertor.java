@@ -40,7 +40,7 @@ public interface SystemUserConvertor {
     @Mapping(source = "roleList", target = "roleList")
     @Mapping(source = "menuList", target = "menuList")
     @Mapping(target = "authorities", expression = "java(com.zigaai.security.utils.SecurityUtil.toAuthorities(roleList, menuList))")
-    @Mapping(target = "isDeleted", expression = "java(model != null && java.util.Objects.equals(com.zigaai.core.enumeration.BoolEnum.TRUE.getVal(), model.getIsDeleted()))")
+    @Mapping(target = "isDeleted", expression = "java(model != null && java.util.Objects.equals(com.zigaai.core.enumeration.BoolEnum.TRUE.getVal(), model.getDeleted()))")
     SystemUser of(AuthenticationModel model, List<? extends AuthRole> roleList, List<? extends AuthMenu> menuList);
 
     @Mapping(target = "usernameBytes", ignore = true)
